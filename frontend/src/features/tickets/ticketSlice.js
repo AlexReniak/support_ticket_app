@@ -58,7 +58,7 @@ export const getTicket = createAsyncThunk('tickets/get', async (ticketId, thunkA
     }
 });
 
-// Close tickert==t
+// Close ticket
 export const closeTicket = createAsyncThunk('tickets/close', async (ticketId, thunkAPI) => {
     try {
         const token = thunkAPI.getState().auth.user.token;
